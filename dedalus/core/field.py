@@ -271,6 +271,10 @@ class Current(Operand):
         """Expand expression over specified variables."""
         return self
 
+    def attempt(self, id=None):
+        """Recursively attempt to evaluate operation."""
+        return self
+
     # def simplify(self, *vars):
     #     """Simplify expression, except subtrees containing specified variables."""
     #     return self
